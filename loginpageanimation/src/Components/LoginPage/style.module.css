@@ -1,0 +1,60 @@
+@keyframes bgcolorchange {
+  0% {
+    background-color: #3eb4e1;
+  }
+  25% {
+    background-color:#139bd1;
+  }
+  50% {
+    background-color: #2749b8;
+  }
+  75% {
+    background-color: #1A2980;
+  }
+  100% {
+    background-color: #1A2980;
+  }
+}
+ @-webkit-keyframes bgcolorchange {
+      0%   {background:#3eb4e1;}
+      25%  {background: #139bd1;}
+      75%  {background: #1A2980;}
+      100% {background: #1A2980;}
+ }
+.rootStyle {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: white
+  /* linear-gradient(45deg, #165654, rgb(9, 9, 19)); */
+}
+.cardStyle{
+    align-items:center;
+    height: 60vh;
+    position:absolute;
+    top:15vh;
+    width:70vh;
+    border:1px solid white;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    z-index: 6;
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.imageStyle{
+  /* background:rgb(16 116 187); */
+  width: 900px;
+  height: 450px;
+  border-radius:400px 400px 0px 0px;
+  margin:auto;
+  position:absolute;
+  bottom:-50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  animation: 4s infinite bgcolorchange;
+  -webkit-animation: bgcolorchange 4s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
